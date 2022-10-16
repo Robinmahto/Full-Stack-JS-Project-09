@@ -303,3 +303,114 @@ header div .header-image {
   margin-right: 20px;
   margin-bottom: 20px;
 }
+
+/* mobile responsive */
+@media (max-width: 1200px) {
+  header .header-text h2 {
+    font-size: 30px;
+  }
+
+  header .header-text p {
+    font-size: 12px;
+  }
+
+  header div .header-image {
+    width: 500px;
+    bottom: -100px;
+  }
+
+  .companies .company-items {
+    margin-right: 50px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 992px) {
+  header .header-text img {
+    position: relative;
+    left: 10em;
+  }
+
+  header .header-text h2 {
+    position: relative;
+    left: 4em;
+    font-size: 2.5em;
+  }
+
+  header .header-text p {
+    position: relative;
+    left: 10em;
+    font-size: 1em;
+  }
+
+  header div .header-image {
+    display: none;
+  }
+
+  .companies .company-items {
+    margin-right: 50px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  header .header-text img {
+    position: relative;
+    left: 4em;
+  }
+
+  header .header-text h2 {
+    position: relative;
+    left: 2em;
+    font-size: 2em;
+  }
+
+  header .header-text p {
+    position: relative;
+    left: 4em;
+    font-size: 1em;
+  }
+
+  .companies .company-items {
+    margin-right: 40px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  header {
+    height: 100vh;
+  }
+  header nav {
+    display: none;
+  }
+  header .header-text {
+    margin-top: 8em;
+  }
+  header .logo {
+    margin-top: 20px;
+  }
+  header .header-text img {
+    position: relative;
+    left: 1.3em;
+    margin-bottom: 20px;
+  }
+
+  header .header-text h2 {
+    position: relative;
+    left: 1em;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+  }
+
+  header .header-text p {
+    position: relative;
+    left: 2em;
+    font-size: 0.8em;
+  }
+
+  .companies .company-items {
+    margin-right: 10px;
+    font-size: 14px;
+  }
+}
