@@ -106,27 +106,22 @@ header div .header-image {
 .blog-cards {
   width: 90%;
   margin: 0 auto;
-  display: flex;
   margin-top: 24px;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
 }
 
 .blog-cards .blog-card {
-  display: flex;
-  align-items: center;
-  gap: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
   border-top-left-radius: 70px;
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
   border-top-right-radius: 10px;
   position: relative;
   box-shadow: 0 0 10px 6px rgb(0 0 0 / 4%);
-  /* height: 300px; */
-}
-
-.blog-card .content {
-  padding-right: 50px;
 }
 
 .blog-card .content .blog-content h6 {
@@ -359,6 +354,14 @@ header div .header-image {
 
   .api .cards {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .blog-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .blog-cards .blog-card {
+    width: 600px;
   }
 }
 
