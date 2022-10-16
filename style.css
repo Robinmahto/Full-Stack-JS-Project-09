@@ -163,12 +163,10 @@ header div .header-image {
 /* FAQ Section */
 
 .faq-section {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   margin-top: 100px;
   background: rgb(192, 202, 202);
-  height: 318px;
 }
 
 .faq-section .faq-content {
@@ -202,14 +200,18 @@ header div .header-image {
   border-radius: 4px;
 }
 
+.faq-image img {
+  position: absolute;
+  right: 0px;
+}
+
 /* download section */
 
 .download-section {
   padding: 10px 80px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   margin: 100px 0px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .download-section .download-content span {
@@ -224,9 +226,8 @@ header div .header-image {
 }
 
 .download-section .download-email form {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .download-section .download-email form input {
@@ -280,7 +281,6 @@ header div .header-image {
   font-weight: 200;
 }
 
-.footer-left .list .list-items::after,
 .footer-right .logos-list .list-items::after {
   content: "";
   width: 1px;
@@ -362,6 +362,37 @@ header div .header-image {
 
   .blog-cards .blog-card {
     width: 600px;
+  }
+
+  .faq-image img {
+    display: none;
+  }
+
+  .faq-content h2 {
+    font-size: 25px;
+    margin: 10px 0;
+  }
+
+  .download-section {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .download-section .download-content {
+    margin-bottom: 20px;
+  }
+
+  .download-section .download-email {
+    width: 100%;
+  }
+
+  .footer-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-section .footer-left {
+    margin-bottom: 50px;
   }
 }
 
